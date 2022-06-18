@@ -1,70 +1,45 @@
 #include "chess.h"
 #include "figures.h"
 
-char** flipV(char**);
+char** flipV(char** a){
+    return a;
+}
 
-/*
- * return a new picture, the horizontal mirror from the original the picture
- * The user must liberate the memory space reserved for the string array (the picture)
- */
-char** flipH(char**);
+char** flipH(char** a){
+    return a;
 
-/*
- * return a new picture, the original picture rotated anti-clockwise
- * The user must liberate the memory space reserved for the string array (the picture)
- */
-char** rotateL(char**);
+}
+char** rotateL(char** a){
+    return a;
 
-/*
- * return a new picture, the original picture rotated clockwise
- * The user must liberate the memory space reserved for the string array (the picture)
- */
-char** rotateR(char**);
+}
+char** rotateR(char** a){
+    return a;
 
-/*
- * return a new picture, the original picture with reverse colors
- * The user must liberate the memory space reserved for the string array (the picture)
- */
-char** reverse(char**);
+}
 
-/*
- * return a new picture, the first picture over the second picture
- * The user must liberate the memory space reserved for the string array (the picture)
- */
-char** superImpose(char**, char**);
+char** reverse(char** a){
+    return a;
 
-/*
- * return a new picture, the first one on the side the second, the new picture will have
- * a wide equeals to the sum from the both wides
- * The user must liberate the memory space reserved for the string array (the picture)
- */
-char** join(char**, char**);
+}
+char** superImpose(char** a, char** b){
+    return a;
 
-/*
- * return a new picture, the first one up to the second, the new picture will have
- * the sum of hides from the both pictures.
- * The user must liberate the memory space reserved for the string array (the picture)
- */
-char** up(char**, char**);
+}
 
+char** join(char** a, char** b){
+    return a;
+}
+char** up(char** a, char** b){
+    return a;
+}
 
-/*
- * return a new picture, the original picture repeated a number of times
- * on the side of each other
- * The user must liberate the memory space reserved for the string array (the picture)
- */
-char** repeatH(char**, int);
+char** repeatH(char** a, int n){
+    return a;
 
+}
 
-/*
- * return a new picture, the original picture repeated a number of times
- * down of each other
- * The user must liberate the memory space reserved for the string array (the picture)
- */
-char** repeatV(char**, int);
+char** repeatV(char** a, int n){
+    return a;
 
-/*
- * Do not try to implement this at home, unless the teacher authorizes it. It could be
- * dangerous for your heatlh
- */
-void interpreter(char**);
+}
