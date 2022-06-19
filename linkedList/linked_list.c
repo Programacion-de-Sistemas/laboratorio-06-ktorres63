@@ -7,21 +7,22 @@ typedef struct node{
 }node;
 
 int main(){
-    int tam,cont;
     node* list = NULL; //HEAD
+    
     node* head = NULL;
+    node* temp = NULL;
+    
     node* curr = head;
-    head = malloc(sizeof(node));
 
+    int tam,cont;
     printf("ingrese tamaño de la lista: \n");
     scanf("%d",&tam);
 
-    while(curr!=NULL){
-        scanf("%d",curr->number);
-        curr = curr->next;
-
+    for(int i=0;i<tam;i++){
+        temp = malloc(sizeof(node));
+        scanf("%d",&temp->number);
+        temp->next=NULL;
     }
-
 /*
     node* n = malloc(sizeof(node));
     if(n==NULL)
