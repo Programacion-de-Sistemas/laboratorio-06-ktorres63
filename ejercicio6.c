@@ -34,12 +34,21 @@ char** center(){
             center=up(center,row());
 
     }
-
-    return center;
+    return reverse(center);
 }
 
 void display() {
-  char **figures = reverse(createFigures());
-  char **firstRow = reverse(row());
-  interpreter(center());
+  char** Bfigures = reverse(createFigures());
+  char** firstRow = reverse(row());
+  char** Ncenter = center();
+  char** pawns = repeatH(pawn,8);
+
+  char** firstR = superImpose(createFigures(), firstRow);
+  char** secondR = superImpose(pawns, row());
+
+  char** board = up(firstR, secondR);
+  board=up(board,Ncenter);
+  interpreter(board);
+
+
 }
