@@ -7,8 +7,6 @@ typedef struct node{
 }node;
 
 int main(){
-    node* list = NULL; //HEAD
-
     node* head = NULL;
     node* temp = NULL;
 
@@ -20,7 +18,6 @@ int main(){
 
     for(int i=0;i<tam;i++){
         temp = malloc(sizeof(node));
-        //scanf("%d",&temp->number);
         temp->number=i;
         temp->next=NULL;
 
@@ -35,7 +32,6 @@ int main(){
     }
     curr= head;
 
-    //list=n;
 
     //IMPRIMIR
     for(node* tmp = head;tmp!=NULL;tmp=tmp->next)
