@@ -22,28 +22,20 @@ char** rotateR(char** a){
 char** reverse(char** a){
     char** tmp=a;
 
-    return tmp;
+    char *weig = &(**tmp);
+    while (*tmp) {
+      //printf("%s\n", *tmp);
+      tmp++;
+    }
 
-}
-char** superImpose(char** a, char** b){
-    return a;
-
-}
-
-char** join(char** a, char** b){
     return a;
 }
-char** up(char** a, char** b){
-    return a;
-}
+char **superImpose(char **a, char **b) { return a; }
 
-char** repeatH(char** a, int n){
-    return a;
+char **join(char **a, char **b) { return a; }
+char **up(char **a, char **b) { return a; }
 
-}
+char **repeatH(char **a, int n) { return a; }
 
-char** repeatV(char** a, int n){
-    return a;
-
-}
+char **repeatV(char **a, int n) { return a; }
 void interpreter(char **);
