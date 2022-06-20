@@ -20,7 +20,9 @@ char** rotateR(char** a){
 }
 
 char** reverse(char** a){
-    return a;
+    char** tmp=a;
+
+    return tmp;
 
 }
 char** superImpose(char** a, char** b){
