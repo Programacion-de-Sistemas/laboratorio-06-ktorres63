@@ -23,8 +23,11 @@ char** reverse(char** a){
     char** tmp=a;
 
     char *weig = &(**tmp);
-    while (*tmp) {
-      //printf("%s\n", *tmp);
+
+    while (**tmp) {
+      if(**tmp=='_')
+        //**tmp='#'   aqui deberia ir el negativo del color 
+
       tmp++;
     }
 
