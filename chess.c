@@ -1,6 +1,8 @@
 #include "chess.h"
 #include "figures.h"
 
+void display();
+
 char** flipV(char** a){
     return a;
 }
@@ -19,7 +21,7 @@ char** rotateR(char** a){
 }
 
 char** reverse(char** a){
-  return a;
+    return a;
 
 }
 char** superImpose(char** a, char** b){
@@ -43,3 +45,4 @@ char** repeatV(char** a, int n){
     return a;
 
 }
+void interpreter(char **);
